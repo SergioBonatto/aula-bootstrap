@@ -3,14 +3,19 @@ body {
 	background-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)), url('../img/back.png');
 
 }
+
+.navbar {
+	margin-bottom: 3rem;
+}
 .navbar-brand{
 	font-family: Nunito;
 	font-variant: normal;
-	font-weight: 800;
+	font-weight: 900;
 }
 
 .navbar .navbar-brand{
 	font-size: 35px;
+	margin-left: 20px;
 } 
 
 .nav-item {
@@ -18,9 +23,15 @@ body {
 }
 
 .barra{
-	margin-left: 20px;
+	display: flex;
 	color: white;
+	justify-content: center;
+	flex-direction: row;
 }
+.navbar .menu {
+	padding-right: 35px;
+}
+
 
 #inicio {
 	justify-content: start;
@@ -54,4 +65,18 @@ body {
 	padding-top: 3.6rem;
 
 
+}
+
+/* nunito-regular - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nunito-v16-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/nunito-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/nunito-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/nunito-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/nunito-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/nunito-v16-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
 }
