@@ -103,14 +103,18 @@ a{outline:none}
 	text-decoration: none;
 	padding: 5px;
 	outline: none !important;
-	border: none !important;;
+	border: none !important;
 
 
 }
 
 .links:hover{
 	color: #FFD535;
+	outline: none !important;
+	border: none !important;
+
 }
+
 
 /* portfolio */
 * {box-sizing:border-box}
@@ -187,7 +191,7 @@ a{outline:none}
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: rgba(0, 0, 0, 0.0); /* #0388A6 */
 }
 
 /* Fading animation */
