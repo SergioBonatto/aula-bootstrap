@@ -21,19 +21,19 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark barra">
     	<div class="container-fluid">
-        <a class="navbar-brand" href="#">Bonatto</a>
+        <a class="navbar-brand logo" href="#inicio">Bonatto</a>
         
       </div>
     	<div class="collapse navbar-collapse menu">
     		<ul class="navbar-nav mr-auto">
     			<li class="nav-item">
-    				<a class="nav-link" href="#inicio">Início</a>
+    				<a class="links" href="#inicio">Início</a>
     			</li>
     			<li class="nav-item">
-    				<a class="nav-link" href="#portfolio">Portfólio</a>
+    				<a class="links" href="#portfolio">Portfólio</a>
     			</li>
     			<li class="nav-item">
-    				<a class="nav-link" href="#contato">Contato</a>
+    				<a class="links" href="#contato">Contato</a>
     			</li>
     			
     		</ul>
@@ -56,13 +56,14 @@
     		
     	</div>
     </section>
+    <button onclick="topFunction()" id="myBtn" title="Ir ao topo"><i class="fas fa-arrow-circle-up"></i></button>
 
     <!-- PORTFOLIO-->
     <section id='portfolio' class="container portfolio-list" href="#portfolio">
         <div id="portfolio" class="text-center paddsection">
 
     <div class="container">
-      <div class="section-title text-center" style="color: #AFAFAF">
+      <div class="section-title text-center" style="color: #AFAFAF; padding-bottom:3rem">
         <h2>Meu Portfólio</h2>
       </div>
     </div>  
@@ -120,23 +121,31 @@
 
     <!-- CONTATO -->
     <section id="contato">
-      <div class="container list-group">
-        <li><a class="links" href="#">whatsapp</a></li>
-        <li><a class="links" href="https://github.com/SergioBonatto">github</a></li>
-        <li><a class="links" href="https://www.linkedin.com/in/sergiobonatto/">linkedin</a></li>
-        <li><a class="links" href="#">instagram</a></li>
-        <li><a class="links" href="https://www.behance.net/sfbonatto">behance</a></li>
-        <li><a class="links" href="#">facebook</a></li>
+      <div class="container">
+      <div class="section-title text-center" style="color: #AFAFAF">
+        <h2>Contato</h2>
       </div>
-    </section>
+    </div> 
+      <div class="container list-group contatos">
+        <ul><a class="links" href="#"> <i class="fab fa-whatsapp"></i>    Whatsapp</a></ul>
+        <ul><a class="links" href="https://github.com/SergioBonatto"><i class="fab fa-github"></i>   GitHub</a></ul>
+        <ul><a class="links" href="https://www.linkedin.com/in/sergiobonatto/"><i class="fab fa-linkedin"></i>    Linkedin</a></ul>
+        <ul><a class="links" href="#"><i class="fab fa-instagram"></i>   Instagram</a></ul>
+        <ul><a class="links" href="https://www.behance.net/sfbonatto"><i class="fab fa-behance-square"></i>   Behance</a></ul>
+        <ul><a class="links" href="#"><i class="fab fa-facebook"></i>   Facebook</a></ul>
+      </div>
+    </section> 
+
+    <!-- FOOTER -->
     <footer class="text-center">
-      <p>Desenvolvido por <a class="link" href="#">Sergio Bonatto</a></p>
+      <p>Desenvolvido por  <a class="links" href="#inicio"> Sergio Bonatto</a></p>
     </footer>
 
      <!-- Owl JS -->
       <script src="JS/owl/jquery.min.js"></script>
       <script src="JS/owl/owl.carousel.min.js"></script>
       <script src="JS/script.js"></script>
+
 
   </body>
 </html>
