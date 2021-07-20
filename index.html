@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <script src="script.js" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/4237bc5923.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href=".CSS/owl/owl.theme.default.min.css">    
+
+
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
 
   </head>
@@ -17,7 +22,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark barra">
     	<div class="container-fluid">
         <a class="navbar-brand" href="#">Bonatto</a>
-        <i class="fas fa-bars"></i>
+        
       </div>
     	<div class="collapse navbar-collapse menu">
     		<ul class="navbar-nav mr-auto">
@@ -28,13 +33,14 @@
     				<a class="nav-link" href="#portfolio">Portfólio</a>
     			</li>
     			<li class="nav-item">
-    				<a class="nav-link" href="#">Contato</a>
+    				<a class="nav-link" href="#contato">Contato</a>
     			</li>
     			
     		</ul>
     	</div>
     </nav>
 
+    <!-- INICIO -->
     <section id="inicio">
     	<div class="container inicio text-center">
     		<h1>Sobre mim</h1>
@@ -51,22 +57,87 @@
     	</div>
     </section>
 
-    <section id='portfolio' class="portfolio-list" href="#portfolio" >
-     <div>
-       
-     </div> 
+    <!-- PORTFOLIO-->
+    <section id='portfolio' class="container portfolio-list" href="#portfolio">
+        <div id="portfolio" class="text-center paddsection">
+
+    <div class="container">
+      <div class="section-title text-center" style="color: #AFAFAF">
+        <h2>Meu Portfólio</h2>
+      </div>
+    </div>  
+     <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img src="img/portfolio/img1.png" style="width:50%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="img/portfolio/img2.png" style="width:50%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="img/portfolio/img3.png" style="width:50%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="img/portfolio/img4.png" style="width:50%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="img/portfolio/img5.png" style="width:50%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="img/portfolio/img6.jpg" style="width:50%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div> 
     </section>
 
+
+    <!-- CONTATO -->
     <section id="contato">
-      <p>whatsapp</p>
-      <p>github</p>
-      <p>linkedin</p>
-      <p>instagram</p>
-      <p>facebook</p> 
+      <div class="container list-group">
+        <li><a class="links" href="#">whatsapp</a></li>
+        <li><a class="links" href="https://github.com/SergioBonatto">github</a></li>
+        <li><a class="links" href="https://www.linkedin.com/in/sergiobonatto/">linkedin</a></li>
+        <li><a class="links" href="#">instagram</a></li>
+        <li><a class="links" href="https://www.behance.net/sfbonatto">behance</a></li>
+        <li><a class="links" href="#">facebook</a></li>
+      </div>
     </section>
     <footer class="text-center">
-      <p>Desenvolvido por Sergio Bonatto</p>
+      <p>Desenvolvido por <a class="link" href="#">Sergio Bonatto</a></p>
     </footer>
+
+     <!-- Owl JS -->
+      <script src="JS/owl/jquery.min.js"></script>
+      <script src="JS/owl/owl.carousel.min.js"></script>
+      <script src="JS/script.js"></script>
+
   </body>
 </html>
 
