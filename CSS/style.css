@@ -45,8 +45,10 @@ h2 {
 
 .logo {
 	font-size: 65px;
-
+  outline:none;
 }
+
+a{outline:none}
 
 .barra{
 	display: flex;
@@ -100,6 +102,9 @@ h2 {
 	font-size: 24px;
 	text-decoration: none;
 	padding: 5px;
+	outline: none !important;
+	border: none !important;;
+
 
 }
 
