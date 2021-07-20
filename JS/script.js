@@ -1,3 +1,7 @@
+$(document).ready(function() {
+    $("#menu-lista").hide();
+}); // ocultando menu
+
 // rolagem suave
 
 
@@ -102,3 +106,42 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+// botão burger animação
+
+const menuBtn = document.querySelector(".menu-btn");
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+  }
+});
+
+
+// barra lateral
+$(document).ready(function(){
+  $("#menu-toggle").click(function(e){
+    e.preventDefault();
+    $("#wrapper").toggleClass("menuDisplayed");
+  });
+});
+
+
+
+
+
+var bton = document.querySelector("#botao");
+bton.addEventListener("click", function() {
+    var div = document.querySelector("#menu-lista");
+    
+  if(div.style.display === "block") {
+        div.style.display = "none";
+    } else {
+      div.style.display = "block";
+  }
+    
+});
