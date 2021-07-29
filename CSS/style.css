@@ -27,6 +27,7 @@ h2 {
 }
 .navbar {
 	margin-bottom: 3rem;
+	/*backdrop-filter: blur(10px);*/
 }
 .navbar-brand{
 	font-family: Nunito;
@@ -354,6 +355,20 @@ footer .links {
 
 @media (max-width: 990px) {
 
+	body{
+			animation: gradient 35s ease infinite;
+			background-size: 800% 800%;
+
+	}
+
+	#nome {
+		margin-top: 0.2rem;
+		height: 55%;
+		border: none;
+		backdrop-filter: blur(10px);
+		object-fit: fill;
+	}
+
 	.sobre {
 		display: flex;
 		justify-content: space-between;
@@ -382,7 +397,7 @@ footer .links {
 		float: left;
 		flex-direction: row;
 		margin-left: 90%;
-		margin-top: -2rem;
+		margin-top: -4.2rem;
 
 	}
 
@@ -399,12 +414,28 @@ footer .links {
 
 @media (max-width: 600px) {
 
+	body{
+			animation: gradient 35s ease infinite;
+			background-size: 900% 800%;
+
+
+	}
+
+	.navbar .container-fluid .navbar-brand img{
+		margin-top: 0.2rem;
+		height: 1%;
+		border: none;
+		backdrop-filter: blur(10px);
+		object-fit: cover;
+	}
+
+
 	.menu-btn {
 
 		float: left;
 		flex-direction: row;
-		margin-left: 80%;
-		margin-top: -2rem;
+		margin-left: 81%;
+		margin-top: -4.2rem;
 
 
 	}

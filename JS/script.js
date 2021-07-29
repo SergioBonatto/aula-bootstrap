@@ -2,6 +2,24 @@ $(document).ready(function() {
     $("#menu-lista").hide();
 }); // ocultando menu
 
+
+// saudação por horário
+
+var now = new Date
+var hora = now.getHours()
+
+var oi = window.document.getElementById('oi');
+
+
+if (hora >= 6 && hora < 12){
+    oi.innerHTML = 'Bom dia!'
+} else if (hora >= 12 && hora < 18){
+    oi.innerHTML = 'Boa tarde!'
+} else {
+    oi.innerHTML = 'Boa noite!'
+}
+
+
 // rolagem suave
 
 
