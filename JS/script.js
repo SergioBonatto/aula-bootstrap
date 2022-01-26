@@ -20,6 +20,7 @@ if (hora >= 6 && hora < 12){
 }
 
 
+
 // rolagem suave
 
 
